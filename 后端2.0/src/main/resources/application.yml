@@ -1,0 +1,13 @@
+server:
+  port: 9092
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.236.110.97:3306/软工
+    username: han-you
+    password: Chenyu&20021122
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml #扫描所有mybatis的xml文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
