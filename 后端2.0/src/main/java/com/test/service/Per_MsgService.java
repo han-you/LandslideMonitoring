@@ -46,7 +46,7 @@ public class Per_MsgService {
         else if(!isPhoneValid(user.getPhoneNumber())){
             this.storesClass.setReturnMessage(15,"手机号非法",null);
         }
-        else if(this.storesClass.getUserMapper().selectUserByUserAccount(user.getUserAccount()).get(0).getPhoneNumber().equals(user.getPhoneNumber())){
+        else if(user.getPhoneNumber().equals(this.storesClass.getUserMapper().selectUserByUserAccount(user.getUserAccount()).get(0).getPhoneNumber())){
             this.storesClass.setReturnMessage(16,"新旧手机号一样",null);
         }
         else{
